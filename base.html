@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
-<title>Verify Email</title>
+<title>{{ title }}</title>
 </head>
 <style>
     * {
@@ -133,7 +133,7 @@
     }
 
     }
-    
+
     .Email .image img {
         width: auto;
         display: block;
@@ -208,37 +208,7 @@
                             <img src="https://res.cloudinary.com/morshudlhgmo/image/upload/v1677421619/Pavilion_Logo_lfmyck.png"
                                 draggable="false" alt="">
                         </div>
-                        <div class="text">
-                            <h2>Invitation to Join [Company Name]</h2>
-                            <p class="mt-3 mb-2">
-                                Dear [Recipient's Name],
-                            </p>
-                            <p>
-                                John Watkins would like to invite you to join [Company Name]on <b>PavilionCMS</b>. Our platform provides Management for all your company blogs in one place.
-                                We believe that you would be a valuable addition to our community, and we would be delighted to have you on board.
-                            </p>
-                            <a href="#">
-                                <button>Verify Email Address</button>
-                            </a>
-                            <p class="mb-1">If you cannot click on the link, please copy and paste it into your browser's address bar.</p>
-                            <p class="mt-1 mb-1">
-                                <a href="#">
-                                    http://localhost:9000/verify-email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3R1c2VyQG9sdXMuY29tIiwiZXhwIjoxNjc4MTE5MzM1fQ.7J7emVFYdlojii55jnyV3w3DTemw46WrfE4PjtPYx8U
-                                </a>
-                            </p>
-                            <p>
-                                If you have any questions or concerns, please do not hesitate to contact us at <b>Support@pavilioncms.com</b>.
-                            </p>
-                            <p>
-                                We look forward to having you on our platform!
-                            </p>
-                            <p>
-                                Best regards,
-                            </p>
-                            <p class="mt-3">
-                                <b>PavilionCMS support Team</b>
-                            </p>
-                        </div>
+                        {% block body %}{% endblock %}
                     </div>
                 </div>
                 <div class="col-lg-3"></div>
@@ -246,35 +216,35 @@
                     <div class="social mt-5">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="https://facebook.com/firstpavilionng">
                                     <img src="https://res.cloudinary.com/morshudlhgmo/image/upload/v1677424832/Vector_uoje6m.png"
                                         draggable="false" title="Follow us on Facebook" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://linkedin.com/in/firstpavilionng">
                                     <img src="https://res.cloudinary.com/morshudlhgmo/image/upload/v1677424832/V_zrewru.png"
                                         draggable="false" title="Follow us on LinkedIn" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://twitter.com/firstpavilionng">
                                     <img src="https://res.cloudinary.com/morshudlhgmo/image/upload/v1677424832/Vecto_n4oupy.png"
                                         draggable="false" title="Follow us on Twitter" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://instagram.com/firstpavilionng">
                                     <img src="https://res.cloudinary.com/morshudlhgmo/image/upload/v1677424832/Vect_gvlijt.png"
                                         draggable="false" title="Follow us on Instagram" alt="">
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#">
                                     <img src="https://res.cloudinary.com/morshudlhgmo/image/upload/v1677424833/Ver_vc4usi.png"
                                         draggable="false" title="Follow us on Telegram" alt="">
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div class="media text-center">
